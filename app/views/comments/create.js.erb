@@ -1,0 +1,3 @@
+$('comments').insert( { bottom: "<%= escape_javascript(render @comment) %>" } ); // Insert the _comment partial at the bottom of the comments list
+$$('.comment').last().highlight(); // Highlight the last comment (the one you just inserted!)
+$('comment_body').clear(); // Clear the form text area
